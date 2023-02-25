@@ -66,6 +66,8 @@ img {
 /* шапка */
 .header {
   border-bottom: 1px solid var(--color-footer-text);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .heder-container {
@@ -200,30 +202,27 @@ img {
   padding-top: 120px;
 }
 
+.feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-inverted);
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+}
+
 .feature-list-icon {
   display: flex;
-  justify-content: space-between;
   gap: 24px;
   margin-top: 0;
   margin-bottom: 8px;
   padding-left: 0;
 }
 
-.feature-item-icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-basis: calc((100% - 72px) / 4);
-}
-
 .feature-icon {
-  display: flex;
-
-  background-color: var(--color-inverted);
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  padding: 24px 102px;
+  width: 60px;
+  height: 64px;
 }
 
 .feature-list {
@@ -331,18 +330,27 @@ img {
 
 .social-list-icon {
   height: 16px;
+  width: 16px;
 }
 
 /* Клієнти */
 .Customers {
   padding-top: 130px;
   padding-bottom: 120px;
+}
+
+.customers-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 168px;
+  height: 88px;
 }
 
 .customers-list {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding-left: 0;
   gap: 24px;
@@ -350,12 +358,16 @@ img {
 
 .customers-link {
   display: flex;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 168px;
-  height: 88px;
-  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   fill: #8e8f99;
+}
+
+.customers-list-icon {
+  width: 104px;
+  height: 56px;
 }
 
 .customers-link:hover,
@@ -385,8 +397,7 @@ img {
 }
 
 .footer-text {
-  margin: 16px 120px 0 0;
-
+  margin-top: 16px;
   color: var(--color-footer-text);
   width: 264px;
   height: 72px;
@@ -396,8 +407,8 @@ img {
   display: flex;
 }
 
-.footer-container-social {
-  display: block;
+.footer-text-container {
+  margin-right: 120px;
 }
 
 .footer-social-text {
